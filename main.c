@@ -18,8 +18,15 @@ int main(void) {
 
 	GPIO_Init();
 
-	SysTick_Config(SYSTICK_TIMER_CONST);
+	SDIO_Init();
 
+	USART1_Init();	// USART1 for debug terminal use only. baud rate = 115200
+
+	SysTick_Config(SYSTICK_TIMER_CONST);
+	
+
+
+	printf("--- System Started ---- \n");
 
 	while (1){
 
