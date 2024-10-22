@@ -26,9 +26,8 @@
 
 
 
-void SD_GPIO_Init(void);	// SDcard gpio init
+void SDIO_Init(void);	// SDcard gpio init, SDIO init, configuration
 
-// SDIO init, configuration
 
 // SDcard operation functions
 
