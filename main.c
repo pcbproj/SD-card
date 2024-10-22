@@ -2,11 +2,17 @@
 
 
 
-RCC_init();
-
 
 
 int main(void) {
+	
+	RCC_Init();
+
+	GPIO_Init();
+
+	SysTick_Config(SYSTICK_TIMER_CONST);
+
+
 	while (1){
 
 

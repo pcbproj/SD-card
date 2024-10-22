@@ -1,5 +1,5 @@
 Output/Debug/Obj/SDCard/RCC_init.o: \
- D:\Work\PCBteach\02_MY_projects\MCU\02_Lessons_Projects_V2\14_SDcard\SD-card_lesson\lib\src\RCC_init.c \
+ D:\Work\PCBteach\02_MY_projects\MCU\02_Lessons_Projects_V2\14_SDcard\SD-card_lesson\RCC_init.c \
  D:/Work/PCBteach/02_MY_projects/MCU/02_Lessons_Projects_V2/14_SDcard/SD-card_lesson/STM32F4xx/Device/Include/stm32f4xx.h \
  D:/Work/PCBteach/02_MY_projects/MCU/02_Lessons_Projects_V2/14_SDcard/SD-card_lesson/STM32F4xx/Device/Include/stm32f407xx.h \
  D:/Work/PCBteach/02_MY_projects/MCU/02_Lessons_Projects_V2/14_SDcard/SD-card_lesson/CMSIS_5/CMSIS/Core/Include/core_cm4.h \
