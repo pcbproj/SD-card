@@ -58,12 +58,14 @@
           <file file_name="lib/inc/delay.h" />
           <file file_name="lib/inc/gpio.h" />
           <file file_name="lib/inc/usart.h" />
+          <file file_name="lib/inc/sdcard.h" />
         </folder>
         <folder Name="src">
           <file file_name="lib/src/adc.c" />
           <file file_name="lib/src/delay.c" />
           <file file_name="lib/src/gpio.c" />
           <file file_name="lib/src/usart.c" />
+          <file file_name="lib/src/sdcard.c" />
         </folder>
       </folder>
       <file file_name="main.h" />

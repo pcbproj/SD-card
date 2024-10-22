@@ -4,6 +4,7 @@
 "Output/Debug/Obj/SDCard/delay.o"
 "Output/Debug/Obj/SDCard/gpio.o"
 "Output/Debug/Obj/SDCard/usart.o"
+"Output/Debug/Obj/SDCard/sdcard.o"
 "Output/Debug/Obj/SDCard/RCC_init.o"
 "Output/Debug/Obj/SDCard/SEGGER_THUMB_Startup.o"
 "Output/Debug/Obj/SDCard/STM32F4xx_Startup.o"
