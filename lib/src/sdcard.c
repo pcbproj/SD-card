@@ -65,13 +65,11 @@ void SDIO_Init(void){
 	// NOTE: clock settings in RCC_Init.c APB2_CLK freq = 84 MHz
 	SDIO->CLKCR |= SDIO_CLKCR_CLKEN |		// Clk enable
 					SDIO_CLKCR_PWRSAV |		// SDCLK is only  enabled when the bus is active
-					SDIO_CLKCR_CLKDIV |		// clock divide factor 
+					SDIO_CLKCR_CLKDIV |		// clock divide factor SDIO_CK = ABP2CLK / (2+1) = 84 MHz / 3 = 28 MHz
 					SDIO_CLKCR_WIDBUS_0;	// 4 bits bus mode
 	
 	// SDIO power OFF
 	SDIO->POWER &= ~( SDIO_POWER_PWRCTRL ); 
-
-
 
 	//SD_power_ON();
 
