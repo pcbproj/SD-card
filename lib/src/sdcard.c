@@ -63,6 +63,7 @@ void SDIO_Init(void){
 	RCC->APB2ENR |= RCC_APB2ENR_SDIOEN;
 	
 	// NOTE: clock settings in RCC_Init.c APB2_CLK freq = 84 MHz
+	// NOTE: SDIO_CK must be in range 187 kHz - 24 MHz
 	SDIO->CLKCR |= SDIO_CLKCR_CLKEN |		// Clk enable
 					SDIO_CLKCR_PWRSAV |		// SDCLK is only  enabled when the bus is active
 					SDIO_CLKCR_CLKDIV |		// clock divide factor SDIO_CK = ABP2CLK / (2+1) = 84 MHz / 3 = 28 MHz

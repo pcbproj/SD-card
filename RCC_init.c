@@ -15,8 +15,9 @@ void RCC_Init(void)
 	PLL_CLK = 84 MHz
 	SYSCLK = 84 MHz
 	APB1_CLK = 42 MHz
-	APB2_CLK = 84 MHz
+	!!! >>> APB2_CLK = 42 MHz << !!!!
 	*/ 
+	// NOTE: APB2CLK = 42 MHz due SD-card max CLK frequency = 24 MHz
 	/*============================================================================================= */
 	 RCC->PLLCFGR &= ~(RCC_PLLCFGR_PLLM);
 	 RCC->PLLCFGR |= RCC_PLLCFGR_PLLM_4 | RCC_PLLCFGR_PLLM_3 | RCC_PLLCFGR_PLLM_0; // M=25 
@@ -24,7 +25,7 @@ void RCC_Init(void)
 	 RCC->PLLCFGR |= RCC_PLLCFGR_PLLN_7 | RCC_PLLCFGR_PLLN_5 | RCC_PLLCFGR_PLLN_3; // N = 168 mult factor for VCO
 	 RCC->PLLCFGR &= ~(RCC_PLLCFGR_PLLP); // /P = 2 -> PLLCLK = 84 MHz
 	/* ========================================================================================== */
-	 RCC->CFGR |= RCC_CFGR_HPRE_DIV1 | RCC_CFGR_PPRE2_DIV1 | RCC_CFGR_PPRE1_DIV2;
+	 RCC->CFGR |= RCC_CFGR_HPRE_DIV1 | RCC_CFGR_PPRE2_DIV1 | RCC_CFGR_PPRE2_DIV2;
 	 RCC->CR   |= RCC_CR_PLLON; // подача тактирования на PLL
 	 while ( (RCC->CR & RCC_CR_PLLRDY) == 0 ) {} // Ожидание стабилизации частоты PLL
 	
